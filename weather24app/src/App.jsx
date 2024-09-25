@@ -3,6 +3,7 @@ import { TiWeatherPartlySunny } from "react-icons/ti";
 import TopButtons from './components/TopButtons';
 import Inputs from './components/inputs';
 import TimeandLocation from './components/TimeandLocation';
+import TempAndDetails from './components/TempAndDetails';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      <TopButtons/>
      <Inputs/>
      <TimeandLocation/>
+     <TempAndDetails/>
     </div>
   )
 }

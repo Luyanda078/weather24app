@@ -11,8 +11,8 @@ function TimeandLocation() {
       </p>
 
 
-      <div>
-        <p>
+      <div  className='flex items-center justify-center my-3'>
+        <p className='text-3xl font-medium'>
           Berlin, DE
         </p>
       </div>
