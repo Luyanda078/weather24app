@@ -12,6 +12,7 @@ function App() {
     const data = await getFormattedWeatherData({q: "berlin"});
     console.log(data);
   };
+
   getWeather();
 
 
