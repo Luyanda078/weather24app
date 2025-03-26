@@ -1,24 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-function TimeandLocation() {
+const TimeandLocation = ({ weather }) => {
   return (
     <div>
-      <div className='flex item-center justify-center my-6'>
-
+      <div className='flex items-center justify-center my-6'>
+        <p className='text-xl font-extralight'>{weather.formattedLocalTime}</p> {/* ✅ Use weather.formattedLocalTime */}
       </div>
-      <p className='text-xl font-extralight '>
-      Wednesday, 18 September | Local time 16:07 AM
-      </p>
 
-
-      <div  className='flex items-center justify-center my-3'>
+      <div className='flex items-center justify-center my-3'>
         <p className='text-3xl font-medium'>
-          Berlin, DE
+          {weather.name}, {weather.country} {/* ✅ Use dynamic name and country */}
         </p>
       </div>
-    
     </div>
-  )
-}
+  );
+};
 
-export default TimeandLocation
+export default TimeandLocation;
