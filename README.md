@@ -1,6 +1,6 @@
 | **App Link**          |
 |-----------------------|
-| [Weather App Demo](http://yourhostedlink.com) |
+|                                                                                                  [Weather App Demo](http://yourhostedlink.com) |
 
 <img src="https://socialify.git.ci/Luyanda078/weather24app/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="weather24app" width="640" height="320" />
 <h1>Weather App</h1>
