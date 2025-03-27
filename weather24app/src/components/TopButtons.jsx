@@ -16,7 +16,7 @@ const TopButtons = ({ setQuery }) => {
           key={city.id}
           className="text-lg font-medium hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in"
           onClick={() => {
-            console.log("Setting query to:", city.name); // Debugging log
+            console.log("Setting query to:", city.name); 
             setQuery({ q: city.name });
           }}
         >

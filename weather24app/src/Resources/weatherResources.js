@@ -59,7 +59,7 @@ const formatForcastWeather = (secs, offset, data) => {
         .filter((f) => f.dt > secs)
         .map(f => ({
             temp: f.main.temp,
-            title: formatToLocalTime(f.dt, offset, 'hh:mm a'), // Fixed "title" spelling
+            title: formatToLocalTime(f.dt, offset, 'hh:mm a'), 
             icon: iconUrlFromThere(f.weather[0].icon),
             date: f.dt_txt,
         }))
