@@ -5,11 +5,11 @@
 ## Run Locally
 Clone the project
 ```bash
-https://github.com/Luyanda078/Employee-App
+https://github.com/Luyanda078/weather24app
 ```
 Go to the project directory
 ```bash
-  cd employee-app
+  cd weather24app
 ```
 Install dependencies
 ```bash
@@ -20,4 +20,4 @@ Start the react server
   npm run dev
 ```
 ## Tech Stack
-**Client:** React JS, HTML5, JavaScript, CSS3
+**Client:** React JS, HTML5, JavaScript, Tailwond CSS
