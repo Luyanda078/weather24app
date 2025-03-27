@@ -13,7 +13,7 @@ const TempAndDetails = ({ weather }) => {
   const verticalList = [
     { id: 1, Icon: FaThermometerEmpty, title: "Real Feel", value: `${feels_like.toFixed()}°` },
     { id: 2, Icon: BiSolidDropletHalf, title: "Humidity", value: `${humidity.toFixed()}%` },
-    { id: 3, Icon: FiWind, title: "Wind", value: `${speed} km/h` },
+    { id: 3, Icon: FiWind, title: "Wind", value: `${speed.toFixed()} km/h` },
   ];
 
   const HorizontalList = [

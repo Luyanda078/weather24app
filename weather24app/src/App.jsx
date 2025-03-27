@@ -8,15 +8,15 @@ import Estimate from './components/Estimate';
 import getFormattedWeatherData from './Resources/weatherResources';
 
 const App = () => {
-  const [query, setQuery] = useState('pietermaritzburg'); // ✅ Changed to string
+  const [query, setQuery] = useState({ q: "pietermaritzburg" }); // ✅ Changed to an object
   const [units, setUnits] = useState('metric');
   const [weather, setWeather] = useState(null);
 
   const getWeather = async () => {
     try {
-      const data = await getFormattedWeatherData({ q: query, units });
+      console.log("Fetching weather for:", query);
+      const data = await getFormattedWeatherData({ ...query, units }); // ✅ Spread query
       setWeather(data);
-      console.log(data);
     } catch (error) {
       console.error("Error fetching weather data:", error);
     }
@@ -28,14 +28,14 @@ const App = () => {
 
   return (
     <div className='mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br shadow-xl shadow-gray-400 from-cyan-600 to-blue-700'>
-      <TopButtons />
-      <Inputs setQuery={setQuery} setUnits={setUnits} /> {/* ✅ Pass props */}
+      <TopButtons setQuery={setQuery} />
+      <Inputs setQuery={setQuery} setUnits={setUnits} />
       {weather && (
         <>
           <TimeandLocation weather={weather} />
           <TempAndDetails weather={weather} />
-          <Estimate />
-          <Estimate />
+          <Estimate title='3 hour step forecast' data={weather.hourly} />
+          <Estimate title='Daily forecast' data={weather.daily} />
         </>
       )}
     </div>
