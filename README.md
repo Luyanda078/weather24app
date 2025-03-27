@@ -1,6 +1,6 @@
 | **App Link**          |
 |-----------------------|
-| [Weather App Demo](http://yourhostedlink.com) |
+| [Weather App](https://spiffy-crepe-6b0900.netlify.app/) |
 
 
 <img src="https://socialify.git.ci/Luyanda078/weather24app/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="weather24app" width="640" height="320" />
