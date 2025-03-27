@@ -19,5 +19,9 @@ Start the react server
 ```bash
   npm run dev
 ```
+Hosted Link
+```bash
+  Access the app here for real-time weather information and forecasts - https://spiffy-crepe-6b0900.netlify.app/
+```
 ## Tech Stack
 **Client:** React JS, HTML5, JavaScript, Tailwond CSS
